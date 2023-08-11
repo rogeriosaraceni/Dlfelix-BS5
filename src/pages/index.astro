@@ -1,0 +1,43 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Alerts from '@components/bootstrap/Alerts.astro';
+---
+
+<Layout>
+    <Alerts />
+
+    <main data-el="main-app" class="main-app">
+
+        <section class="container-fluid"></section>
+
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb" class="breadcrumb-app">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/">
+                            <i class="bi bi-house-fill"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+
+            <div class="card">
+                <div class="card-body">
+
+                    <h3>
+                        <span data-bs-toggle="tooltip" data-bs-title="Tooltip">Dlfelix Bootstrap 5</span>
+                    </h3>
+
+                    <!-- <div class="section-title">
+                        <span class="title">Seleção</span>
+                    </div> -->
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</Layout>
+
+

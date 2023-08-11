@@ -1,0 +1,88 @@
+---
+
+---
+
+<!--
+    captura o request de action = ''
+
+    if(action == "cad"){
+        divAction.classList.add("d-block")
+    }
+ -->
+
+
+
+<!--
+<%action = request("action")%>
+
+<% if action = "cad" then%>
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>Registro(s) inserido(s) com sucesso!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<%end if%>
+
+<% if action = "desafio" then%>
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>Desafio enviado com sucesso!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<%end if%>
+
+<% if action = "edit" then%>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Registro(s) atualizado(s) com sucesso!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<%end if%>
+
+<% if action = "del" then%>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Registro(s) excluído(s) com sucesso!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<%end if%>
+-->
+
+<style>
+    .alert button.close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -13px;
+        border-radius: 50%;
+        opacity: .4;
+        width: 25px;
+        height: 25px;
+        outline: 0 !important;
+        text-align: center;
+        padding: 3px;
+        font-weight: 300;
+        color: var(--black);
+        background-color: var( --white);
+    }
+
+    .alert{ color: var(--white);}
+    .alert strong{ font-weight: 400;}
+    .alert button.close:hover { opacity: .55; }
+    .alert .close~span { display: block; max-width: 89%; }
+    .alert[data-notify="container"] { padding: 10px 10px 10px 20px; border-radius: 4px; }
+    .alert.alert-with-icon { padding-left: 65px; }
+
+    .alert-primary{ background-color: var(--primary);}
+    .alert-info   { background-color: var(--info);}
+    .alert-success{ background-color: var(--success);}
+    .alert-warning{ background-color: var(--warning);}
+    .alert-danger { background-color: var(--danger);}
+</style>

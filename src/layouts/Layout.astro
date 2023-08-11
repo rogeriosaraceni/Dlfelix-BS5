@@ -1,0 +1,24 @@
+---
+// Imports
+import Head from '@includes/Head.astro';
+import Header from '@includes/Header.astro';
+import Footer from '@includes/Footer.astro';
+import BtnScrollToTop from '@components/BtnScrollToTop.astro';
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <Head />
+	</head>
+
+	<body>
+        <Header />
+		<slot />
+		<Footer />
+        <BtnScrollToTop />
+	</body>
+</html>
+
+<style is:global>
+</style>
